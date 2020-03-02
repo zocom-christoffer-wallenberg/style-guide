@@ -1,0 +1,29 @@
+.label {
+    position: absolute;
+    top: 10px;
+    transition: all 0.5s;
+    display: flex;
+}
+
+.input-field {
+    min-width: 200px;
+    margin-bottom: 2rem;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    transition: border-color 0.5s;
+}
+
+.input-field:focus ~ .label,
+.input-field:valid ~ .label {
+    top: -5px;
+    font-size: 0.7rem;
+    color: #5c29db;
+}
+
+.input-field:focus {
+    border-color: #5c29db;
+}
