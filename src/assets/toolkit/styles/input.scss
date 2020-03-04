@@ -1,11 +1,11 @@
-.label {
+.label-material {
     position: absolute;
     top: 10px;
     transition: all 0.5s;
     display: flex;
 }
 
-.input-field {
+.input-field-material {
     min-width: 200px;
     margin-bottom: 2rem;
     padding: 0.5rem 0.5rem 0.5rem 0;
@@ -17,13 +17,31 @@
     transition: border-color 0.5s;
 }
 
-.input-field:focus ~ .label,
-.input-field:valid ~ .label {
+.input-field-material:focus ~ .label-material,
+.input-field-material:valid ~ .label-material {
     top: -5px;
     font-size: 0.7rem;
     color: #5c29db;
 }
 
-.input-field:focus {
+.input-field-material:focus {
     border-color: #5c29db;
+}
+
+.label {
+    padding: .25rem 0;
+    font-size: .7rem;
+    text-transform: uppercase;
+    display: block;
+}
+
+.input-field {
+    border: 1px solid black;
+    border-radius: .25rem;
+    padding: .5rem;
+    height: 2.6rem;
+    margin: 0 0 .8rem 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    width: 250px;
 }

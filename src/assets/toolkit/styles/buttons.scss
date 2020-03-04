@@ -1,15 +1,14 @@
-.button {
+.button-purple {
     padding: 1rem;
-    margin-top: 1rem;
     background: #443385;
     outline: none;
     border: 1px solid #443385;
     box-shadow: -4px 4px #e1e1fc;
     font-size: 1.2rem;
     color: #ffffff;
-  }
+}
 
-.button-2 {
+.button-green {
     background-color: #078080;
     outline: none;
     padding: 1.2rem;
@@ -18,13 +17,36 @@
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
-    margin-top: 1rem;
     transition: box-shadow 0.3s;
 }
-.button-2:hover {
+.button-green:hover {
     box-shadow: 0 8px 10px -5px rgba(31, 18, 53, 0.6);
 }
 
-.button-2:active {
+.button-green:active {
     box-shadow: none;
 }
+
+.button-ghost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    border: .125rem solid black;
+    border-radius: .5rem;
+    padding: 1rem;
+  }
+  
+  .button-ghost:hover {
+    background: #000;
+    color: #ddd;
+  }
+  
+  .button-ghost:active {
+    background: #000;
+    color: #FFF;
+  }
